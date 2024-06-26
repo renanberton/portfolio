@@ -19,9 +19,21 @@ function App() {
           <span>Olá pessoas!</span>
           <span>Seja bem-vindo ao meu Portifólio</span>
           <p>EU SOU UM PROGRAMADOR</p>
-          <button>
-            <a href="/">Sobre mim</a>
-          </button>
+          <div className='box-button'>
+            <button>
+              <a href="/">Sobre mim</a>
+            </button>
+            <div>
+              <a href="https://www.github.com/renanberton" target="_blank" rel="noopener noreferrer">
+                <img src="/assets/images/Git.png" alt="Logo GitHub" />
+              </a>
+            </div>
+            <div>
+              <a href="https://www.linkedin.com/in/renanberton/" target="_blank" rel="noopener noreferrer">
+                <img src="/assets/images/Linkedin.png" alt="Logo Linkedin" />
+              </a>
+            </div>
+          </div>
         </div>
         <div className="box2">
           <img src="/assets/images/image1.png" alt="" />
