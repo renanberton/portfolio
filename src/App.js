@@ -23,12 +23,10 @@ function App() {
             <button>
               <a href="/">Sobre mim</a>
             </button>
-            <div>
+            <div className='box-social'>
               <a href="https://www.github.com/renanberton" target="_blank" rel="noopener noreferrer">
                 <img src="/assets/images/Git.png" alt="Logo GitHub" />
               </a>
-            </div>
-            <div>
               <a href="https://www.linkedin.com/in/renanberton/" target="_blank" rel="noopener noreferrer">
                 <img src="/assets/images/Linkedin.png" alt="Logo Linkedin" />
               </a>
