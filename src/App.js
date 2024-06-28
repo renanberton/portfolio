@@ -34,7 +34,7 @@ function App() {
           </div>
         </div>
         <div className="box2">
-          <img src="/assets/images/image1.png" alt="" />
+          <img src="/assets/images/image1.png" alt="Imagem de um programador" />
         </div>
       </div>
 
