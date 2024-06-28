@@ -1,44 +1,55 @@
 import './App.scss';
+import Home from './pages/Home/Home';
 
 function App() {
-  return (
-    <div className="container">
-      <header>
-        <nav>
-          <span>RENAN ALEXANDRE BERTON</span>
-          <div className='menu'>
-            <a href="/">sobre mim</a>
-            <a href="/">experiência</a>
-            <a href="/">projetos</a>
-            <a href="/">contato</a>
-          </div>
-        </nav>
-      </header>
-      <div className="main">
-        <div className="box1">
-          <span>Olá pessoas!</span>
-          <span>Seja bem-vindo ao meu Portifólio</span>
-          <p>EU SOU UM PROGRAMADOR</p>
-          <div className='box-button'>
-            <button>
-              <a href="/">Sobre mim</a>
-            </button>
-            <div className='box-social'>
-              <a href="https://www.github.com/renanberton" target="_blank" rel="noopener noreferrer">
-                <img src="/assets/images/Git.png" alt="Logo GitHub" />
-              </a>
-              <a href="https://www.linkedin.com/in/renanberton/" target="_blank" rel="noopener noreferrer">
-                <img src="/assets/images/Linkedin.png" alt="Logo Linkedin" />
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="box2">
-          <img src="/assets/images/image1.png" alt="Imagem de um programador" />
-        </div>
-      </div>
 
+const Skill = ({ name, rating }) => {
+  return (
+    <div className="skill">
+      <span className="skill-name">{name}</span>
+      <div className="stars">
+        {Array.from({ length: 5 }, (_, index) => (
+          <span key={index} className={index < rating ? "star filled" : "star"}>★</span>
+        ))}
+      </div>
     </div>
+  );
+};
+
+
+const skillsData = [
+  { name: 'HTML', rating: 3 },
+  { name: 'CSS / SASS', rating: 4 },
+  { name: 'Javascript', rating: 4 },
+  { name: 'React', rating: 5 },
+  { name: 'Wordpress', rating: 4 },
+  { name: 'Bancos de Dados', rating: 4 },
+  { name: 'Tailwind / Bootstrap', rating: 5 },
+  { name: 'Design UX / UI', rating: 4 },
+  { name: 'API\'s e Requisições', rating: 4 },
+];
+
+const Skills = () => {
+  return (
+    <div className="box-skills">
+      <img src="assets/images/rehzera.png" alt="Foto do Renan" />
+      <h1>RENAN ALEXANDRE BERTON</h1>
+      <span className='text-about'>Formado em Análise e Desenvolvimento de Sistemas na Universidade Paulista.
+      <br /><br /> Atuo com Desenvolvimento focado em Front-End e algumas tecnologias back-end e bancos de dados.</span>
+      <div>
+        <h2>Tecnologias</h2>
+      </div>
+      <div className="skills-container">
+        {skillsData.map((skill, index) => (
+          <Skill key={index} name={skill.name} rating={skill.rating} />
+        ))}
+      </div>
+    </div>
+  );
+};
+
+  return (
+    <Skills />
   );
 }
 
