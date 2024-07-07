@@ -89,6 +89,7 @@
             width: 100%;
             flex-wrap: wrap;
             margin: 0 auto;
+            padding-top: 100px;
          }
 
          .box-social {
@@ -115,6 +116,7 @@
             color: #424242;
             font-size: 52px;
             font-weight: bold;
+            padding-top: 20px;
 
             @media (max-width: 768px) {
                font-size: 36px;

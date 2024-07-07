@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
+* {
+   margin: 0;
+   padding: 0;
+}
+
+.container-projects {
+   width: 100%;
+   height: auto;
+   background-color: #D9D9D9;
+   padding: 0;
+   margin: 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding-top: 100px;
+
+   .test {
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 900px;
+      gap: 100px;
+      flex-wrap: wrap;
+      margin: 100px auto;
+
+      @media (max-width: 800px) {
+         width: 100%;
+         justify-content: space-between;
+         gap: 70px;
+      }
+
+      @media (max-width: 420px) {
+         gap: 20px;
+      }
+
+      .box-projects {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         margin: 0 auto;
+
+         a {
+            display: flex;
+            justify-content: space-evenly;
+            width: 90%;
+         }
+      }
+   }
+
+   h3 {
+      font-family: "Francois One", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      color: #424242;
+      font-size: 32px;
+   }
+
+   h4 {
+      color: #5976AF;
+      font-family: "Roboto", sans-serif;
+      font-size: 18px;
+      font-weight: bold;
+      max-width: 180px;
+      width: 90%;
+      padding: 10px 0;
+
+      @media (max-width: 420px) {
+         max-width: 100%;
+      }
+   }
+
+   .img-project {
+      width: 90%;
+      max-width: 180px;
+      height: auto;
+
+      @media (max-width: 420px) {
+         max-width: 100%;
+      }
+   }
+
+   p {
+      color: #424242;
+      font-family: "Roboto", sans-serif;
+      font-size: 14px;
+      max-width: 180px;
+      width: 90%;
+      text-align: justify;
+      padding: 10px 0;
+
+      @media (max-width: 420px) {
+         max-width: 100%;
+      }
+   }
+
+   .box-veja-mais {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      max-width: 160px;
+
+      @media (max-width: 420px) {
+         max-width: 100%;
+      }
+
+      span {
+         color: #424242;
+         font-family: "Roboto", sans-serif;
+         font-size: 16px;
+         font-weight: bold;
+         text-decoration: none;
+      }
+   }
+}
