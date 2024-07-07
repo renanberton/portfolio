@@ -2,8 +2,8 @@ import './style.scss'
 
 function Experiences() {
    return (
-      <div className='container-experience'>
-      <h1>Experiências</h1>
+      <div className='container-experience' id="experiences">
+      <h2>Experiências</h2>
       <div className="box-experiences">
       <h2>Desenvolvedor Full-Stack Junior</h2>    
       <div className="job-informations">

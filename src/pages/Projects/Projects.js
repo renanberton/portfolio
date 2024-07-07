@@ -2,8 +2,8 @@ import './style.scss'
 
 function Projects() {
    return (
-      <div className='container-projects'>
-      <h3>Projetos</h3>
+      <div className='container-projects' id="projects">
+      <h2>Projetos</h2>
       <div className="test">
         <div className="box-projects">
           <img className='img-project' src="/assets/images/placeholder.png" alt="Imagem do projeto" />

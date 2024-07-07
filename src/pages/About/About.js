@@ -15,20 +15,23 @@ function About() {
    };
    
    const skillsData = [
-     { name: 'HTML', rating: 3 },
+     { name: 'HTML', rating: 4 },
      { name: 'CSS / SASS', rating: 4 },
      { name: 'Javascript', rating: 4 },
-     { name: 'React', rating: 5 },
+     { name: 'React', rating: 4 },
      { name: 'Wordpress', rating: 4 },
-     { name: 'Bancos de Dados', rating: 4 },
-     { name: 'Tailwind / Bootstrap', rating: 5 },
+     { name: 'Bancos de Dados', rating: 3 },
+     { name: 'Tailwind / Bootstrap', rating: 4 },
      { name: 'Design UX / UI', rating: 4 },
      { name: 'API\'s e Requisições', rating: 4 },
+     { name: 'Linux', rating: 4 },
+     { name: 'Docker', rating: 2 },
+     { name: 'Deploys', rating: 3 },
    ];
    
    const Skills = () => {
      return (
-       <div className="box-skills">
+       <div className="box-skills" id="about">
          <img src="assets/images/rehzera.png" alt="Foto do Renan" />
          <h1>RENAN ALEXANDRE BERTON</h1>
          <span className='text-about'>Formado em Análise e Desenvolvimento de Sistemas na Universidade Paulista.
