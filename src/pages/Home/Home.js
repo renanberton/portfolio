@@ -24,6 +24,9 @@ function Home() {
                <a href="/">Sobre mim</a>
                </button>
                <div className='box-social'>
+               <a href="https://www.figma.com/design/rljVZ1ZahbrFXiHK0azw7P/Portf%C3%B3lio?node-id=65-55&t=gJfiaKorhfGfco76-1" target="_blank" rel="noopener noreferrer">
+                  <img src="/assets/images/figma.png" alt="Logo Figma" />
+               </a>
                <a href="https://www.github.com/renanberton" target="_blank" rel="noopener noreferrer">
                   <img src="/assets/images/Git.png" alt="Logo GitHub" />
                </a>

@@ -99,9 +99,14 @@
          .box-social {
             display: flex;
             flex-wrap: wrap;
-            gap: 50px;
+            gap: 20px;
             justify-content: center;
             margin: 0 auto;
+            align-items: flex-end;
+
+            img:first-child {
+               width: 40px;
+            }
          }
 
          span {
