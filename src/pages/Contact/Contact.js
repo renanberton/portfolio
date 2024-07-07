@@ -5,6 +5,7 @@ function Contact() {
       <div className='container-contact' id="contact">
         <h2>Contatos</h2>
         <p>Gostou do meu perfil? <br /> Entre em contato!</p>
+        <p className='curriculo'><a href="assets/images/curriculo.pdf" download>Currículo em PDF</a></p>
         <div className="box-contacts">
           <a href="mailto:renan_berton@yahoo.com.br" target="_blank" rel="noopener noreferrer">
             <img src="/assets/images/mail.png" alt="Logo E-mail" />
