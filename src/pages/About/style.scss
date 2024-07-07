@@ -10,22 +10,26 @@ body {
 .box-skills {
    width: 100%;
    height: 100%;
-   background-color: #5976AF;
+   background-color: #D9D9D9;
    display: flex;
    flex-direction: column;
    justify-content: space-around;
    align-items: center;
-   padding: 120px 0;
+   padding: 100px 0;
 
-   h1 {
+    h1 {
       text-align: center;
       font-family: "Francois One", sans-serif;
       font-weight: 400;
       font-style: normal;
-      color: #DDDDDD;
+      color: #5976AF;
       font-size: 42px;
       margin-top: 50px;
-   }
+
+      @media (max-width: 400px) {
+        font-size: 32px;
+      }
+    }
 
    img {
       width: 200px;
@@ -48,7 +52,7 @@ h2 {
    font-family: "Francois One", sans-serif;
    font-weight: 400;
    font-style: normal;
-   color: #DDDDDD;
+   color: #424242;
    margin-top: 50px;
    margin-bottom: 50px;
 }
@@ -63,6 +67,10 @@ h2 {
    justify-content: center;
    align-items: center;
    margin: 0 auto;
+
+    @media (max-width: 400px) {
+      gap: 50px;
+    }
 }
  
  .skill {
@@ -70,58 +78,55 @@ h2 {
    flex-direction: column;
    align-items: center;
    border-radius: 10px;
-   width: 150px;
-   min-height: 80px;
-   text-align: center;
- }
-
- .stars {
-   display: flex;
-   justify-content: center;
- }
- 
- .star {
-   font-size: 24px;
-   color: #d3d3d3;
- }
- 
- .star.filled {
-   color: #DDDDDD;
- }
-
- .skill {
-   display: flex;
-   align-items: center;
-   padding: 10px;
-   border-radius: 4px;
    width: 90%;
+   min-height: 80px;
    max-width: 150px;
    text-align: center;
-   color: white;
 
-   span {
+    @media (max-width: 400px) {
+      width: 40%;
+    }
+
+    span {
       min-height: 65px;
       font-size: 26px;
       font-weight: bold;
       font-family: "Roboto", sans-serif;
       color: #424242;
-   }
+    }
+
+    @media (max-width: 350px) {
+      font-size: 20px;
+    }
  }
- 
- 
+
  .stars {
    display: flex;
    justify-content: center;
-   gap: 5px;
  }
  
  .star {
    font-size: 24px;
-   color: #d3d3d3;
+   color: #424242;
+ }
+ 
+  .star.filled {
+    color: #5976AF;
+  }
+ 
+  .stars {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
+ 
+ .star {
+   font-size: 24px;
+   color: #424242;
  }
  
  .star.filled {
-   color: #DDDDDD;
+   color: #5976AF;
  }
  
  
