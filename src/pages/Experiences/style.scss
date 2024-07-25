@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
+
+.container-experience {
+   background-color: #5976AF;
+   width: 100%;
+   height: auto;
+   padding-bottom: 140px;
+
+   h2 {
+      padding-top: 120px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      font-family: "Francois One", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      color: #DDDDDD;
+      font-size: 32px;
+   }
+
+   .box-experiences:nth-child(odd) {
+      background-color: #424242; /* Cor de fundo para os itens ímpares */
+    }
+    
+   .box-experiences:nth-child(even) {
+      background-color: #DDDDDD; /* Cor de fundo para os itens pares */
+   }
+    
+   .box-experiences:nth-child(even) h3, .box-experiences:nth-child(even) p, .box-experiences:nth-child(even) span  {
+      color: #424242;     
+   }  
+
+   .box-experiences:nth-child(odd) h3, .box-experiences:nth-child(odd) p, .box-experiences:nth-child(odd) h2, .box-experiences:nth-child(odd) span {
+      color: #DDDDDD;
+   }
+
+   .box-experiences {
+      width: 90%;
+      max-width: 900px;
+      background-color: #DDDDDD;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0 auto;
+      margin-top: 90px;
+      border-radius: 10px;
+
+      p {
+         width: 90%;
+         margin: 20px auto;
+         text-align: center;
+         color: #424242;
+         font-family: "Roboto", sans-serif;
+         font-weight: 500;
+         padding-bottom: 20px;
+      }
+
+      h2 {
+         margin: 20px auto;
+         color: #424242;
+         font-family: "Roboto", sans-serif;
+         font-size: 26px;
+         font-weight: bold;
+         padding: 0 20px;
+
+         @media (max-width: 350px) {
+            font-size: 20px;
+         }
+      }
+
+
+      .job-informations {
+         display: flex;
+         justify-content: space-evenly;
+         align-items: center;
+         width: 90%;
+         max-width: 700px;
+         margin: 0 auto;
+         flex-wrap: wrap;
+
+         h3 {
+            font-family: "Roboto", sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            color: #5976AF;
+
+            @media (max-width: 350px) {
+               font-size: 18px;
+            }
+
+         }
+
+         span {
+            font-family: "Roboto", sans-serif;
+            font-size: 20px;
+
+            @media (max-width: 350px) {
+               font-size: 16px;
+            }
+         }
+
+      }
+   }
+}
