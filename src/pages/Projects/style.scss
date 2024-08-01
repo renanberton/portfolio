@@ -15,7 +15,7 @@
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   padding-top: 120px;
+   padding: 100px 0;
 
    .test {
       width: 90%;
@@ -24,7 +24,7 @@
       align-items: center;
       max-width: 900px;
       flex-wrap: wrap;
-      margin: 100px auto;
+      margin: 100px auto 0 auto;
 
       @media (max-width: 800px) {
          width: 100%;
