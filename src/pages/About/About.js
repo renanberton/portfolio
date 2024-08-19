@@ -15,15 +15,16 @@ function About() {
    };
    
    const skillsData = [
-     { name: 'HTML', rating: 4 },
-     { name: 'CSS / SASS', rating: 4 },
      { name: 'Javascript', rating: 4 },
      { name: 'React', rating: 4 },
-     { name: 'Wordpress', rating: 4 },
+     { name: 'CSS / SASS', rating: 4 },
      { name: 'PHP', rating: 3 },
      { name: 'Laravel', rating: 3 },
-     { name: 'Bancos de Dados', rating: 3 },
+     { name: 'HTML', rating: 4 },
+     { name: 'Wordpress', rating: 4 },
      { name: 'Tailwind / Bootstrap', rating: 4 },
+     { name: 'JAVA / Spring MVC', rating: 3 },
+     { name: 'Bancos de Dados', rating: 3 },
      { name: 'Design UX / UI', rating: 4 },
      { name: 'Git / GitHub', rating: 4 },
      { name: 'API\'s e Requisições', rating: 3 },
