@@ -78,13 +78,6 @@ const projects = [
     description: 'Site Fictício de Vendas de passagens e viagens, com várias funcionalidades.',
     link: 'https://renanberton.github.io/caravan-bootstrap/'
   },
-  {
-    id: 11,
-    imgSrc: '/assets/images/frdiesel.png',
-    title: 'FR Diesel',
-    description: 'Site completo de Vendas de Peças de Caminhão e acessórios.',
-    link: 'https://frdiesel.com.br/'
-  },
 ];
 
 function Projects() {
