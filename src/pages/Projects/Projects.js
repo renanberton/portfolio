@@ -59,7 +59,7 @@ const projects = [
   },
   {
     id: 9,
-    imgSrc: 'https://camo.githubusercontent.com/c94d802e6428c53bffb29ab2cfbe5965fb663f4cda4b3603ba1cebb9b87c438d/68747470733a2f2f692e696d6775722e636f6d2f614661496d43772e676966',
+    imgSrc: 'https://camo.githubusercontent.com/fbcc66a6ee70cf1e8e04092ae1a1082b81d853b9d8a980f1128fc79caafa2e45/68747470733a2f2f692e696d6775722e636f6d2f614661496d43772e676966',
     title: 'To-do list - Lista de Tarefas',
     description: 'Lista de Afazeres, com opção de Adicionar, excluir tarefas e no final é possível tirar um print da tela para salvar.',
     link: 'https://renanberton.github.io/to-do-list/'
