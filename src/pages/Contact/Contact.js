@@ -7,7 +7,7 @@ function Contact() {
         <p>Gostou do meu perfil? <br /> Entre em contato!</p>
         <p className='curriculo'><a href="assets/images/curriculo.pdf" download>Currículo em PDF</a></p>
         <div className="box-contacts">
-          <a href="mailto:renan_berton@yahoo.com.br" target="_blank" rel="noopener noreferrer">
+          <a href="mailto:renanalexandre.berton@gmail.com" target="_blank" rel="noopener noreferrer">
             <img src="/assets/images/mail.png" alt="Logo E-mail" />
           </a>
           <a href="tel:+5511976573355" target="_blank" rel="noopener noreferrer">
