@@ -24,7 +24,7 @@ const projects = [
   },
   {
     id: 4,
-    imgSrc: 'https://camo.githubusercontent.com/49986b13cd39a50bbfdbc35b1a150166a8b4b4e303e3e79c1d0d4efc90d64d7a/68747470733a2f2f692e696d6775722e636f6d2f313366656264682e676966',
+    imgSrc: 'https://i.imgur.com/13febdh.gif',
     title: 'Jogo da Memória',
     description: 'Jogo da memória Pokémon, desenvolvido para aprender a usar Javascript e seus fundamentos.',
     link: 'https://renanberton.github.io/Jogo-da-Mem-ria/'
