@@ -16,22 +16,27 @@ function About() {
    
    const skillsData = [
      { name: 'Javascript', rating: 4 },
-     { name: 'React', rating: 4 },
-     { name: 'CSS / SASS', rating: 4 },
+     { name: 'Java', rating: 3 },
      { name: 'PHP', rating: 3 },
+     { name: 'Python', rating: 4 },
+     { name: 'React', rating: 4 },
+     { name: 'Django Framework', rating: 3 },
      { name: 'Laravel', rating: 3 },
-     { name: 'HTML', rating: 4 },
      { name: 'Wordpress', rating: 4 },
+     { name: 'HTML', rating: 4 },
+     { name: 'CSS / SASS', rating: 4 },
      { name: 'Tailwind / Bootstrap', rating: 4 },
-     { name: 'JAVA / Spring MVC', rating: 3 },
+     { name: 'Junit', rating: 3 },
+     { name: 'Selenium', rating: 3 },
      { name: 'Bancos de Dados', rating: 3 },
      { name: 'Design UX / UI', rating: 4 },
      { name: 'Git / GitHub', rating: 4 },
      { name: 'API\'s e Requisições', rating: 3 },
      { name: 'Linux', rating: 3 },
-     { name: 'NPM / Yarn / Composer', rating: 4 },
+     { name: 'Gerenciadores de Pacotes', rating: 4 },
      { name: 'Docker', rating: 2 },
      { name: 'Deploys', rating: 3 },
+     { name: 'Postman', rating: 3 },
    ];
    
    const Skills = () => {

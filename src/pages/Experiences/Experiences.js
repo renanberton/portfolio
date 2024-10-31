@@ -7,8 +7,9 @@ const experiences = [
       company: "Tecnocomp",
       period: "Ago. de 2024 / Emprego Atual",
       description: `Prestação de Serviços, Desenvolvimento de Softwares e aplicações Web para a Prefeitura de São Bernardo do Campo.
-      Manutenção de sistemas legados com Innovation e Cobol.
-      Tecnologias para desenvolvimento: Java, HTML, CSS, Javascript, SQL, Postman, Spring MVC e Controle de Versionamento com SVN.`
+      Manutenção de sistemas legados com Innovation e Java.
+      Tecnologias para desenvolvimento: Java, HTML, CSS, Javascript, SQL, Postman e Controle de Versionamento com SVN e Git
+      Automatizações com Selenium e testes unitários com Junit`
     },
   {
     title: "Desenvolvedor Full-Stack Junior",
