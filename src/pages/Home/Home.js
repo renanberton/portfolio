@@ -24,7 +24,7 @@ function Home() {
       <div className="main">
         <div className="box1">
           <span>Olá pessoas!</span>
-          <span>Seja bem-vindo ao meu Portifólio</span>          
+          <span>Sejam bem-vindos ao meu Portifólio</span>          
           <div className='box-button'>
             <button onClick={() => scrollToSection('about')}>Sobre mim</button>
             <div className='box-social'>
