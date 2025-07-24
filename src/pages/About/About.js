@@ -44,7 +44,7 @@ function About() {
        <div className="box-skills" id="about">
          <img src="assets/images/rehzera.png" alt="Foto do Renan" />
          <h1>RENAN ALEXANDRE BERTON</h1>
-         <span className='text-about'>Formado em Análise e Desenvolvimento de Sistemas na Universidade Paulista.
+         <span className='text-about'>Formado em Análise e Desenvolvimento de Sistemas pela Universidade Paulista.
          <br /><br /> Atuo com Desenvolvimento Full-Stack e bancos de dados.</span>
          <div>
            <h2>Tecnologias</h2>
