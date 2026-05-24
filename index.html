@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Renan Alexandre Berton - Portfólio de Desenvolvimento Full-Stack">
+    <meta name="author" content="Renan Alexandre Berton">
+    <title>Renan Berton | Dev Portfolio</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cursor personalizado -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Header / Navbar -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="#home" class="logo">
+                    <span class="logo-code">&lt;/&gt;</span>
+                    <span class="logo-text">Renan<span class="logo-accent">.</span></span>
+                </a>
+                <div class="nav-links">
+                    <a href="#home" class="nav-link active">Início</a>
+                    <a href="#about" class="nav-link">Sobre</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#experience" class="nav-link">Experiência</a>
+                    <a href="#projects" class="nav-link">Projetos</a>
+                    <a href="#contact" class="nav-link btn-nav">Contato</a>
+                </div>
+                <div class="menu-btn">
+                    <div class="menu-btn__line"></div>
+                    <div class="menu-btn__line"></div>
+                    <div class="menu-btn__line"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        Sejam bem-vindos<br>
+                        ao meu <span class="gradient-text">Portfólio</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Renan Alexandre Berton · Full-Stack Developer
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn-primary">
+                            Ver Projetos
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn-outline">
+                            Contato
+                        </a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="https://github.com/renanberton" class="social-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/renanberton/" class="social-link" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.figma.com/design/rljVZ1ZahbrFXiHK0azw7P/Portf%C3%B3lio?node-id=65-55&t=gJfiaKorhfGfco76-1" class="social-link" target="_blank">
+                            <i class="fab fa-figma"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="code-orb">
+                        <div class="orb-inner"></div>
+                        <div class="code-lines">
+                            <span>&lt;div&gt;</span>
+                            <span>class="dev"</span>
+                            <span>&lt;/div&gt;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Quem sou <span class="gradient-text">eu</span></h2>
+                </div>
+                <div class="about-grid">
+                    <div class="about-card">
+                        <div class="about-icon">
+                            <i class="fas fa-user-astronaut"></i>
+                        </div>
+                        <h3>Renan Alexandre Berton</h3>
+                        <p class="about-bio">
+                            Formado em <strong>Análise e Desenvolvimento de Sistemas</strong> pela Universidade Paulista. 
+                            Atuo com <strong>Desenvolvimento Full-Stack</strong> e bancos de dados, com experiência em 
+                            sistemas legados e arquiteturas modernas.
+                        </p>
+                        <div class="about-info">
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>São Paulo, BR</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>+3 anos de experiência</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-code"></i>
+                                <span>Full-Stack Developer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <div class="stat-number">12+</div>
+                            <div class="stat-label">Projetos Concluídos</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">4+</div>
+                            <div class="stat-label">Tecnologias</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">3+</div>
+                            <div class="stat-label">Anos de Exp.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section Corrigida -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Stack <span class="gradient-text">Técnica</span></h2>
+            </div>
+            <div class="skills-grid">
+                <!-- Linguagens -->
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-terminal"></i>
+                        <h3>Linguagens</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%" style="width: 0%"></div>
+                            </div>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Java</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%" style="width: 0%"></div>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">PHP</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%" style="width: 0%"></div>
+                            </div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75%" style="width: 0%"></div>
+                            </div>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frameworks -->
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-layer-group"></i>
+                        <h3>Frameworks</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">React</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%" style="width: 0%"></div>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Spring Boot</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%" style="width: 0%"></div>
+                            </div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Laravel</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="78%" style="width: 0%"></div>
+                            </div>
+                            <span class="skill-percent">78%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Tailwind CSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88%" style="width: 0%"></div>
+                            </div>
+                            <span class="skill-percent">88%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Bootstrap</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%" style="width: 0%"></div>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">WordPress</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75%" style="width: 0%"></div>
+                            </div>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Banco de Dados -->
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-database"></i>
+                        <h3>Banco de Dados</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">MySQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%" style="width: 0%"></div>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Oracle</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%" style="width: 0%"></div>
+                            </div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">PostgreSQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="78%" style="width: 0%"></div>
+                            </div>
+                            <span class="skill-percent">78%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DevOps & Ferramentas -->
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-tools"></i>
+                        <h3>DevOps & Ferramentas</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Docker</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75%" style="width: 0%"></div>
+                            </div>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Git/GitHub</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%" style="width: 0%"></div>
+                            </div>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Linux</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%" style="width: 0%"></div>
+                            </div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Selenium</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75%" style="width: 0%"></div>
+                            </div>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JUnit</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70%" style="width: 0%"></div>
+                            </div>
+                            <span class="skill-percent">70%</span>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Experiência <span class="gradient-text">Profissional</span></h2>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker current"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3>Desenvolvedor Full-Stack Junior</h3>
+                                    <span class="timeline-company">Tecnocomp — Prefeitura de São Bernardo do Campo</span>
+                                </div>
+                                <span class="timeline-badge current-badge">Atual</span>
+                            </div>
+                            <div class="timeline-date">
+                                <i class="far fa-calendar-alt"></i> Ago 2024 — Fev 2026
+                            </div>
+                            <ul class="timeline-list">
+                                <li>Manutenção e sustentação de sistemas legados com Java</li>
+                                <li>Desenvolvimento de Softwares e aplicações Web para a Prefeitura dee São Bernardo do Campo</li>
+                                <li>Tecnologias: Java, SQL, API's, HTML, CSS, JavaScript, Postman, Bash</li>
+                                <li>Controle de Versionamento com SVN e Git</li>
+                                <li>Automatizações com Selenium e testes unitários com JUnit</li>
+                            </ul>
+                            <div class="timeline-tags">
+                                <span>Java</span><span>Selenium</span><span>JUnit</span><span>SVN</span><span>Git</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Desenvolvedor Full-Stack Junior</h3>
+                            <span class="timeline-company">Davinti</span>
+                            <div class="timeline-date">
+                                <i class="far fa-calendar-alt"></i> Out 2022 — Mai 2023
+                            </div>
+                            <ul class="timeline-list">
+                                <li>Desenvolvimento de scripts e layouts para aplicações desktop e mobile com JavaScript e Java</li>
+                                <li>Administração e Operação de banco de dados: Oracle, MySQL e PostgreSQL</li>
+                                <li>Desenvolvimento de Fluxogramas e processos BPMN</li>
+                                <li>Metodologias Ágeis Scrum e Kanban</li>
+                            </ul>
+                            <div class="timeline-tags">
+                                <span>JavaScript</span><span>Oracle</span><span>MySQL</span><span>Scrum</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Estagiário de Desenvolvimento Full-Stack</h3>
+                            <span class="timeline-company">Doois Web</span>
+                            <div class="timeline-date">
+                                <i class="far fa-calendar-alt"></i> Out 2021 — Out 2022
+                            </div>
+                            <ul class="timeline-list">
+                                <li>Desenvolvimento de Websites responsivos com WordPress, React e Python</li>
+                                <li>Projetos de UX/UI com Figma e Adobe Xd</li>
+                                <li>Ferramentas: Bitbucket, Jira, Strapi</li>
+                                <li>Tecnologias: HTML, CSS, Javascript, React, Deploys, Python e SQL.</li>
+                                <li>Versionamento com Git/GitHub</li>
+                            </ul>
+                            <div class="timeline-tags">
+                                <span>React</span><span>Python</span><span>WordPress</span><span>Figma</span><span>Git</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Projetos em <span class="gradient-text">Destaque</span></h2>
+                </div>
+                <div class="projects-grid" id="projectsGrid"></div>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="section-header">
+                        <h2 class="section-title">Gostou do meu <span class="gradient-text">perfil?</span></h2>
+                    </div>
+                    <p class="contact-text">Entre em contato! Estou disponível para novas oportunidades e desafios.</p>
+                    
+                    <div class="contact-grid">
+                        <a href="mailto:renan@devmail.com" class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-info">
+                                <span class="contact-label">Email</span>
+                                <p class="contact-value">renanalexandre.berton@gmail.com</p>
+                            </div>
+                            <i class="fas fa-arrow-right contact-arrow"></i>
+                        </a>
+
+                        <a href="tel:+5511976573355" class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-info">
+                                <span class="contact-label">Telefone</span>
+                                <p class="contact-value">(11) 97657-3355</p>
+                            </div>
+                            <i class="fas fa-arrow-right contact-arrow"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/renanberton/" class="contact-card" target="_blank">
+                            <div class="contact-icon linkedin">
+                                <i class="fab fa-linkedin-in"></i>
+                            </div>
+                            <div class="contact-info">
+                                <span class="contact-label">LinkedIn</span>
+                                <p class="contact-value">/in/renanberton</p>
+                            </div>
+                            <i class="fas fa-arrow-right contact-arrow"></i>
+                        </a>
+
+                        <a href="https://wa.me/5511976573355?text=Olá%20Renan!%20Vi%20seu%20portfólio%20e%20gostaria%20de%20conversar%20sobre%20oportunidades." class="contact-card" target="_blank" rel="noopener noreferrer">
+                            <div class="contact-icon whatsapp">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="contact-info">
+                                <span class="contact-label">WhatsApp</span>
+                                <p class="contact-value">(11) 97657-3355</p>
+                            </div>
+                            <i class="fas fa-arrow-right contact-arrow"></i>
+                        </a>
+                    </div>
+
+                    <div class="resume-wrapper">
+                        <a href="renanalexandreberton.pdf" class="btn-primary btn-resume" download>
+                            <i class="fas fa-file-pdf"></i>
+                            Currículo em PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Renan Alexandre Berton. Todos os direitos reservados.</p>
+                <a href="#home" class="back-to-top">
+                    <i class="fas fa-arrow-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
