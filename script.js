@@ -10,67 +10,51 @@ const projects = [
     },
     {
         title: "Calcule Aki",
-        description: "Projeto que contém diversas calculadoras para facilitar vários cálculos que fazemos no dia-a-dia.",
-        tags: ["JavaScript", "HTML", "CSS", "Math"],
+        description: "Projeto que contém diversas calculos para facilitar vários cálculos que fazemos no dia-a-dia.",
+        tags: ["JavaScript", "HTML", "CSS"],
         icon: "fas fa-calculator",
-        github: "#",
-        demo: "#"
+        github: "https://github.com/renanberton/Calculadoras",
+        demo: "https://renanberton.github.io/Calculadoras/"
     },
     {
         title: "Bikcraft",
         description: "Site de Exposição de bicicletas, desenvolvido para aperfeiçoar meus conhecimentos em desenvolvimento WEB.",
         tags: ["HTML", "CSS", "JavaScript", "Responsive"],
         icon: "fas fa-bicycle",
-        github: "#",
-        demo: "#"
+        github: "https://github.com/renanberton/Bikcraft",
+        demo: "https://renanberton.github.io/Bikcraft/"
     },
     {
         title: "Jogo da Memória Pokémon",
         description: "Jogo da memória Pokémon, desenvolvido para aprender a usar Javascript e seus fundamentos.",
         tags: ["JavaScript", "Game", "CSS", "HTML"],
         icon: "fas fa-brain",
-        github: "#",
-        demo: "#"
+        github: "https://github.com/renanberton/Jogo-da-Mem-ria",
+        demo: "https://renanberton.github.io/Jogo-da-Mem-ria/"
     },
     {
         title: "Quiz",
-        description: "Jogo de perguntas e respostas, com várias funcionalidades e exibe o total de respostas corretas no final.",
+        description: "Jogo de perguntas e respostas.",
         tags: ["JavaScript", "Quiz", "Interactive"],
         icon: "fas fa-question-circle",
-        github: "#",
-        demo: "#"
-    },
-    {
-        title: "Consultor de IP",
-        description: "Exibição de IP do computador do usuário e que exibe a localização exata do provedor em um Mapa.",
-        tags: ["API", "JavaScript", "Map", "Geolocation"],
-        icon: "fas fa-map-marker-alt",
-        github: "#",
-        demo: "#"
+        github: "https://github.com/renanberton/quiz",
+        demo: "https://renanberton.github.io/quiz/"
     },
     {
         title: "Consultor de CEP",
-        description: "Consulta na API oficial de CEP Brasileiro e exibição das informações do CEP inserido.",
+        description: "Consulta a API oficial de CEP's e exibe as informações.",
         tags: ["API", "JavaScript", "CEP", "JSON"],
         icon: "fas fa-search-location",
-        github: "#",
-        demo: "#"
-    },
-    {
-        title: "Loja Virtual de Bolsas",
-        description: "Loja Virtual Fictícia para exibição de bolsas artesanais.",
-        tags: ["E-commerce", "HTML", "CSS", "JavaScript"],
-        icon: "fas fa-store",
-        github: "#",
-        demo: "#"
+        github: "https://github.com/renanberton/viaCEP",
+        demo: "https://consute-seu-cep.netlify.app/"
     },
     {
         title: "To-do List",
         description: "Lista de Afazeres, com opção de Adicionar, excluir tarefas e no final é possível tirar um print da tela.",
         tags: ["JavaScript", "LocalStorage", "DOM"],
         icon: "fas fa-tasks",
-        github: "#",
-        demo: "#"
+        github: "https://github.com/renanberton/to-do-list",
+        demo: "https://renanberton.github.io/to-do-list/"
     },
     {
         title: "Aulas de Surf",
@@ -85,8 +69,8 @@ const projects = [
         description: "Site Fictício de Vendas de passagens e viagens, com várias funcionalidades.",
         tags: ["Travel", "HTML", "CSS", "Bootstrap"],
         icon: "fas fa-bus",
-        github: "#",
-        demo: "#"
+        github: "https://github.com/renanberton/caravan-bootstrap",
+        demo: "https://renanberton.github.io/caravan-bootstrap/"
     }
 ];
 
