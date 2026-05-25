@@ -1,10 +1,34 @@
 // Dados dos projetos
 const projects = [
     {
+        title: "Dj Leo Casagrande - Curso de DJ profissional",
+        description: "Página de curso profissionalizante de DJ, focada em SEO e auta conversão de vendas.",
+        tags: ["HTML", "CSS", "JavaScript", "SEO"],
+        icon: "fas fa-headphones",
+        github: "https://github.com/renanberton/landing-page-leocasagrande3",
+        demo: "https://renanberton.github.io/landing-page-leocasagrande3/"
+    },
+    {
+        title: "Dj Leo Casagrande - Segredo dos DJ's",
+        description: "Página de curso profissionalizante de DJ, focada em SEO e auta conversão de vendas.",
+        tags: ["HTML", "CSS", "JavaScript", "SEO"],
+        icon: "fas fa-sliders",
+        github: "https://github.com/renanberton/landing-page-casagrande",
+        demo: "https://renanberton.github.io/landing-page-casagrande/"
+    },
+    {
+        title: "BD Soluções - E-commerce de soluções magnéticas.",
+        description: "Mock-up de venda de soluções magnéticas para area industrial.",
+        tags: ["HTML", "CSS", "JavaScript", "SEO"],
+        icon: "fas fa-magnet",
+        github: "https://github.com/renanberton/bd-solucoes-magneticas",
+        demo: "https://renanberton.github.io/bd-solucoes-magneticas/index.html"
+    },
+    {
         title: "Pokédex - React",
         description: "Projeto que consome a API Oficial do Pokémon e exibe os mesmos, com opção de pesquisar e listar todos.",
         tags: ["React", "API", "JavaScript", "CSS"],
-        icon: "fab fa-react",
+        icon: "fas fa-dragon",
         github: "https://github.com/renanberton/pokedex-react",
         demo: "https://pokedex-renan.netlify.app/"
     },
@@ -34,7 +58,7 @@ const projects = [
     },
     {
         title: "Quiz",
-        description: "Jogo de perguntas e respostas.",
+        description: "Jogo de perguntas e respostas e pontuação final.",
         tags: ["JavaScript", "Quiz", "Interactive"],
         icon: "fas fa-question-circle",
         github: "https://github.com/renanberton/quiz",
@@ -50,19 +74,11 @@ const projects = [
     },
     {
         title: "To-do List",
-        description: "Lista de Afazeres, com opção de Adicionar, excluir tarefas e no final é possível tirar um print da tela.",
+        description: "Lista de afazeres, com opção de Adicionar, excluir tarefas e no final salva-se 1 print das tarefas.",
         tags: ["JavaScript", "LocalStorage", "DOM"],
         icon: "fas fa-tasks",
         github: "https://github.com/renanberton/to-do-list",
         demo: "https://renanberton.github.io/to-do-list/"
-    },
-    {
-        title: "Aulas de Surf",
-        description: "Landing Page Fictícia para agendamento de Aulas de Surf.",
-        tags: ["Landing Page", "HTML", "CSS", "Responsive"],
-        icon: "fas fa-water",
-        github: "#",
-        demo: "#"
     },
     {
         title: "Caravan",
