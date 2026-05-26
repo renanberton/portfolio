@@ -1,4 +1,4 @@
-// Dados dos projetos
+// ===== DADOS DOS PROJETOS =====
 const projects = [
     {
         title: "Dj Leo Casagrande - Curso de DJ profissional",
@@ -90,7 +90,7 @@ const projects = [
     }
 ];
 
-// Renderizar projetos
+// ===== RENDERIZAR PROJETOS =====
 function renderProjects() {
     const projectsGrid = document.getElementById('projectsGrid');
     if (!projectsGrid) return;
@@ -119,9 +119,7 @@ function renderProjects() {
     `).join('');
 }
 
-
-
-// Menu mobile
+// ===== MENU MOBILE =====
 const menuBtn = document.querySelector('.menu-btn');
 const navLinks = document.querySelector('.nav-links');
 
@@ -139,9 +137,8 @@ if (menuBtn && navLinks) {
     });
 }
 
-// Navbar scroll effect
+// ===== NAVBAR SCROLL EFFECT =====
 const header = document.querySelector('.header');
-let lastScroll = 0;
 
 window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
@@ -153,11 +150,9 @@ window.addEventListener('scroll', () => {
         header.style.background = 'rgba(10, 10, 10, 0.8)';
         header.style.padding = '20px 0';
     }
-    
-    lastScroll = currentScroll;
 });
 
-// Active nav link on scroll
+// ===== ACTIVE NAV LINK ON SCROLL =====
 const sections = document.querySelectorAll('section');
 const navItems = document.querySelectorAll('.nav-link');
 
@@ -186,7 +181,7 @@ function updateActiveNav() {
 window.addEventListener('scroll', updateActiveNav);
 updateActiveNav();
 
-// Smooth scroll
+// ===== SMOOTH SCROLL =====
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         const href = this.getAttribute('href');
@@ -204,57 +199,73 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Animate skill bars on scroll
-// ===== ANIMAÇÃO DAS SKILL BARS CORRIGIDA =====
-function animateSkillBars() {
+// ===== SKILL BARS - ANIMAÇÃO ÚNICA (CORRIGIDA) =====
+let skillsAnimated = false;
+
+function initSkillBars() {
     const skillBars = document.querySelectorAll('.skill-progress');
-    
-    if (skillBars.length === 0) return;
-    
-    const windowHeight = window.innerHeight;
-    const triggerPoint = windowHeight - 100;
-    
     skillBars.forEach(bar => {
-        const barPosition = bar.getBoundingClientRect().top;
-        const targetWidth = bar.getAttribute('data-width') || bar.style.width;
-        
-        // Se a barra estiver visível
-        if (barPosition < triggerPoint) {
-            // Salva a largura original em um atributo data
-            if (!bar.getAttribute('data-width')) {
-                bar.setAttribute('data-width', bar.style.width);
-            }
-            
-            // Força a largura para 0 e depois anima
-            bar.style.transition = 'width 1.2s cubic-bezier(0.16, 1, 0.3, 1)';
-            bar.style.width = '0%';
-            
-            // Pequeno delay para garantir a transição
-            setTimeout(() => {
-                bar.style.width = targetWidth;
-            }, 50);
+        // Salva a largura alvo no atributo data-width
+        const width = bar.style.width;
+        if (width && !bar.getAttribute('data-width')) {
+            bar.setAttribute('data-width', width);
         }
+        // Começa com largura 0
+        bar.style.width = '0%';
+        bar.style.transition = 'width 1.2s cubic-bezier(0.16, 1, 0.3, 1)';
     });
 }
 
-// Também anima ao carregar a página
+function animateSkillBars() {
+    // Se já animou, não faz nada
+    if (skillsAnimated) return;
+    
+    const skillBars = document.querySelectorAll('.skill-progress');
+    if (skillBars.length === 0) return;
+    
+    const skillsSection = document.querySelector('#skills');
+    if (!skillsSection) return;
+    
+    const sectionPosition = skillsSection.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+    
+    // Se a seção de skills estiver visível (com margem de 100px)
+    if (sectionPosition < windowHeight - 100) {
+        skillBars.forEach(bar => {
+            const targetWidth = bar.getAttribute('data-width');
+            if (targetWidth && targetWidth !== '0%') {
+                bar.style.width = targetWidth;
+            } else if (bar.style.width !== '0%') {
+                // Fallback: usa o width atual se não tiver data-width
+                const currentWidth = bar.style.width;
+                if (currentWidth && currentWidth !== '0%') {
+                    bar.style.width = currentWidth;
+                } else {
+                    bar.style.width = '85%'; // valor padrão
+                }
+            }
+        });
+        skillsAnimated = true;
+        console.log('✅ Skill bars animadas com sucesso!');
+    }
+}
+
+// Inicializa as skill bars
+initSkillBars();
+
+// Tenta animar ao carregar
 window.addEventListener('load', () => {
     setTimeout(animateSkillBars, 500);
 });
 
-// Anima ao scroll com throttle para melhor performance
-let isScrolling = false;
+// Anima ao scroll (apenas se ainda não animou)
 window.addEventListener('scroll', () => {
-    if (!isScrolling) {
-        requestAnimationFrame(() => {
-            animateSkillBars();
-            isScrolling = false;
-        });
-        isScrolling = true;
+    if (!skillsAnimated) {
+        requestAnimationFrame(animateSkillBars);
     }
 });
 
-// Back to top button
+// ===== BACK TO TOP =====
 const backToTop = document.querySelector('.back-to-top');
 if (backToTop) {
     backToTop.addEventListener('click', (e) => {
@@ -266,7 +277,7 @@ if (backToTop) {
     });
 }
 
-// Prevent demo link alert
+// ===== PREVENIR LINKS VAZIOS =====
 document.querySelectorAll('.project-link, .contact-link, .social-link').forEach(link => {
     if (link.getAttribute('href') === '#') {
         link.addEventListener('click', (e) => {
@@ -276,9 +287,8 @@ document.querySelectorAll('.project-link, .contact-link, .social-link').forEach(
     }
 });
 
-// Initialize
+// ===== INICIALIZAR =====
 document.addEventListener('DOMContentLoaded', () => {
     renderProjects();
-    console.log('Portfólio carregado! 🚀');
+    console.log('🚀 Portfólio carregado com sucesso!');
 });
-
